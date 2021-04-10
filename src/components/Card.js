@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Card = ({movie}) => {
     return (
@@ -10,6 +11,7 @@ const Card = ({movie}) => {
     <h5 class="card-title">{movie.name} ({movie.year})</h5>
     
     <h6 class="card-text">{movie.story}</h6>
+    <Link to={`/Trailer/${movie.id}`}>Trailer</Link>
     <div>
    {
    [1,2,3,4,5].map (el =>(
@@ -20,9 +22,10 @@ const Card = ({movie}) => {
   
     
     } 
+    <a href="#" class="btn btn-primary">More details</a>
     </div>
     
-    <a href="#" class="btn btn-primary">More details</a>
+    
   </div>
 </div>
         </div>

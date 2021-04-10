@@ -27,7 +27,7 @@ const Mouvieslists = () => {
         [1,2,3,4,5].map(el=>
 
     
-    <i key={el} class="fas fa-star"  onClick={()=> ratingFilter ==el ? setRating(el-1): setRating(el)} style={{color:el<= ratingFilter ? "yellow" : "black" , cursor:'pointer'}}  > </i>)
+    <i key={el} class="fas fa-star"  onClick={()=> ratingFilter ===el ? setRating(el-1): setRating(el)} style={{color:el<= ratingFilter ? "yellow" : "black" , cursor:'pointer'}}  > </i>)
     }
     </div>
   </div>
